@@ -1,4 +1,4 @@
-const getData = require('./mongo.js')
+const getData = require('./mongo')
 
 const mainFun= async()=>{
     let data = await getData()
