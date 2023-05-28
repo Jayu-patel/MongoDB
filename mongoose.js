@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 // OR
 // import { connect, Schema, model } from 'mongoose'
 
-mongoose.connect('mongodb://127.0.0.1/database')
+mongoose.connect('Link')
 const productShcema = new mongoose.Schema({
     name : String,
     type: String
@@ -22,7 +22,7 @@ const saveDB=async()=>{
 const updateDB=async()=>{
     const porductModel = mongoose.model('product',productShcema)
     let data = await porductModel.updateOne(
-        {name: 'R35 GTR Nismo'},
+        {name: 'GTR R35 Nismo'},
         {
             $set: {
                 type: '4WD'
