@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 // OR
 // import { connect, Schema, model } from 'mongoose'
 
-mongoose.connect('Link')
+mongoose.connect('Your Link')
 const productShcema = new mongoose.Schema({
     name : String,
     type: String
